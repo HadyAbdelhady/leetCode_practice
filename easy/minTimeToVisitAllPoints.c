@@ -3,35 +3,6 @@
 #include <math.h>
 int minTimeToVisitAllPoints(int **points, int pointsSize, int *pointsColSize)
 {
-    // // point size is the number of the rows
-    // // col size is unnessesary cuz it's always 2
-    // int steps = 0, sec = 0;
-    // for (int i = 1; i < pointsSize; i++)
-    // {
-    //     /*
-    //         x1= i-1 ,0
-    //         y1= i-1 ,1
-    //         x2= i ,0
-    //         y2= i ,1
-    //         if y2>x2 then steps will be x2-x1 + y2-x2
-    //         if not y2-y1 + x2-y2
-    //     */
-
-    //     if ((points[i][1]) == (points[i - 1][1]))           // y1==y2
-    //         steps += fabs(points[i - 1][0] - points[i][0]); // abs of x1-x2
-    //     else
-    //     {
-    //         steps = fabs(points[i - 1][0] - points[i][0]); // abs of x1-x2
-
-    //         if (fabs(points[i][1]) - fabs(points[i - 1][1]) > 0) // y2>y1
-    //             steps += points[i][1] - steps - points[i - 1][0];
-    //         else // y2<y1
-    //             steps += points[i - 1][1] - steps - points[i - 1][0];
-    //     }
-    //     printf("%d\n", steps);
-    //     sec += fabs(steps);
-    // }
-
     int sum = 0;
     int max = 0;
 
